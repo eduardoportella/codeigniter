@@ -29,7 +29,7 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="<?php echo base_url('index') ?>" class="active">Home</a></li>
+							<li><a href="<?php echo base_url('') ?>" class="active">Home</a></li>
 
 							<li><a href="<?php echo base_url('offers') ?>">Offers</a></li>
 
