@@ -10,6 +10,7 @@ class Pagina extends CI_Controller{
 
 	public function index()
 	{
-		$this->load->view('index');
+		$dados['titulo'] = 'Home';
+		$this->load->view('index', $dados);
 	}
 }

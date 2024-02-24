@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>PHPJabbers.com | Free Car Rental Website Template</title>
+		<title><?php echo $titulo ?></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css') ?>" />
@@ -29,24 +29,24 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="index.php" class="active">Home</a></li>
+							<li><a href="<?php echo base_url('index') ?>" class="active">Home</a></li>
 
-							<li><a href="offers.php">Offers</a></li>
+							<li><a href="<?php echo base_url('offers') ?>">Offers</a></li>
 
-							<li><a href="fleet.php">Fleet</a></li>
+							<li><a href="<?php echo base_url('fleet') ?>">Fleet</a></li>
 
 							<li>
 								<a href="#" class="dropdown-toggle">About</a>
 
 								<ul>
-									<li><a href="about.php">About Us</a></li>
-									<li><a href="team.php">Team</a></li>
-									<li><a href="blog.php">Blog</a></li>
-									<li><a href="testimonials.php">Testimonials</a></li>
-									<li><a href="faq.php">FAQ</a></li>
-									<li><a href="terms.php">Terms</a></li>
+									<li><a href="<?php echo base_url('about') ?>">About Us</a></li>
+									<li><a href="<?php echo base_url('team') ?>">Team</a></li>
+									<li><a href="<?php echo base_url('blog') ?>">Blog</a></li>
+									<li><a href="<?php echo base_url('testimonials') ?>">Testimonials</a></li>
+									<li><a href="<?php echo base_url('faq') ?>">FAQ</a></li>
+									<li><a href="<?php echo base_url('terms') ?>">Terms</a></li>
 								</ul>
 							</li>
-							<li><a href="contact.php">Contact Us</a></li>
+							<li><a href="<?php echo base_url('contact') ?>">Contact Us</a></li>
 						</ul>
 					</nav>

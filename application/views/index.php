@@ -48,7 +48,7 @@
 									<span class="image">
 										<img src="<?php echo base_url('assets/images/other-1-720x480.jpg') ?>" alt="" />
 									</span>
-									<a href="offers.html">
+									<a href="<?php echo base_url('offers') ?>">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
 										
 										<p>price from: <strong> $ 140.00</strong> per weekend</p>
@@ -62,7 +62,7 @@
 									<span class="image">
 										<img src="<?php echo base_url('assets/images/other-2-720x480.jpg') ?>" alt="" />
 									</span>
-									<a href="offers.html">
+									<a href="<?php echo base_url('offers') ?>offers">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
 										
 										<p>price from: <strong> $ 140.00</strong> per weekend</p>
@@ -76,7 +76,7 @@
 									<span class="image">
 										<img src="<?php echo base_url('assets/images/other-3-720x480.jpg') ?>" alt="" />
 									</span>
-									<a href="offers.html">
+									<a href="<?php echo base_url('offers') ?>offers">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
 										
 										<p>price from: <strong> $ 140.00</strong> per weekend</p>
@@ -88,7 +88,7 @@
 								</article>
 							</section>
 
-							<p class="text-center"><a href="offer.html">View Offers &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
+							<p class="text-center"><a href="<?php echo base_url('offers') ?>">View Offers &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
 
 							<br>
 
@@ -100,7 +100,7 @@
 									<span class="image">
 										<img src="<?php echo base_url('assets/images/other-1-720x480.jpg') ?>" alt="" />
 									</span>
-									<a href="fleet.html">
+									<a href="<?php echo base_url('fleet') ?>">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
 										
 										<p>price from: <strong> $ 140.00</strong> per weekend</p>
@@ -117,7 +117,7 @@
 									<span class="image">
 										<img src="<?php echo base_url('assets/images/other-2-720x480.jpg') ?>" alt="" />
 									</span>
-									<a href="fleet.html">
+									<a href="<?php echo base_url('fleet') ?>">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
 										
 										<p>price from: <strong> $ 140.00</strong> per weekend</p>
@@ -134,7 +134,7 @@
 									<span class="image">
 										<img src="<?php echo base_url('assets/images/other-3-720x480.jpg') ?>" alt="" />
 									</span>
-									<a href="fleet.html">
+									<a href="<?php echo base_url('fleet') ?>">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
 										
 										<p>price from: <strong> $ 140.00</strong> per weekend</p>
@@ -149,7 +149,7 @@
 								</article>
 							</section>
 
-							<p class="text-center"><a href="fleet.html">View Fleet &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
+							<p class="text-center"><a href="<?php echo base_url('fleet') ?>">View Fleet &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
 
 							<br>
 
@@ -181,7 +181,7 @@
 								</div>
 							</div>
 
-							<p class="text-center"><a href="blog.html">Read More &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
+							<p class="text-center"><a href="<?php echo base_url('blog') ?>">Read More &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
 
 							<br>
 
@@ -201,7 +201,7 @@
 								</div>
 							</div>
 
-							<p class="text-center"><a href="testimonials.html">Read More &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
+							<p class="text-center"><a href="<?php echo base_url('testimonials') ?>">Read More &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
 						</div>
 					</div>
 
