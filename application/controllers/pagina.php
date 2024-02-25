@@ -28,6 +28,29 @@ class Pagina extends CI_Controller{
 
 	public function contact()
 	{
+		$this->load->helper('form');
+		$this->load->library(array('form_validation', 'email'));
+		$this->form_validation->set_rules('name', 'Name', 'trim|required');
+		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+		$this->form_validation->set_rules('subject', 'Subject', 'required');
+		$this->form_validation->set_rules('message', 'Message', 'trim|required');
+	
+		if ($this->form_validation->run() == false){
+			$dados['formerror'] = validation_errors();
+		} else {
+			$dados['formerror'] = 'A validacao funcionou corretamente';
+			$dados_form = $this->input->post();
+			$this->email->from($dados_form['email'], $dados_form['nome']);
+			$this->email->to($dados_form['emailteste@email.com']);
+			$this->email->subject($dados_form['subject']);
+			$this->email->message($dados_form['message']);
+			if ($this->email->send()){
+				$dados['formerror'] = 'Email enviado com sucesso';
+			} else {
+				$dados['formerror'] = 'Erro ao enviar email';
+			}
+		}
+
 		$dados['titulo'] = 'Contact';
 		$this->load->view('contact', $dados);
 	}

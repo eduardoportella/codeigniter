@@ -8,18 +8,30 @@
 							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
 						</div>
 					</div>
-
-				<!-- Footer -->
+ 
+				<!-- Footer --->
 					<footer id="footer">
 						<div class="inner">
 							<section>
 								<h2>Contact Us</h2>
+								<?php
+									if ($formerror):
+										echo '<p>' . $formerror . '</p>';
+									endif;
+										echo form_open('pagina/contact', array('class' => 'fields'));
+										echo form_input('name', set_value('name'), array('placeholder' => 'Name'));
+										echo form_input('email', set_value('email'), array('placeholder' => 'Email'));
+										echo form_input('subject', set_value('subject'), array('placeholder' => 'Subject'));
+										echo form_textarea('message', set_value('message'), array('placeholder' => 'Message'));
+										echo form_submit('send', 'Send Message', array('class' => 'primary'));
+										echo form_close();
+									?>
 								<form method="post" action="#">
 									<div class="fields">
+
 										<div class="field half">
 											<input type="text" name="name" id="name" placeholder="Name" />
 										</div>
-
 										<div class="field half">
 											<input type="text" name="email" id="email" placeholder="Email" />
 										</div>
