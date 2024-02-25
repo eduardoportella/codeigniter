@@ -6,7 +6,7 @@
 							<h1>Blog</h1>
 
 							<div class="image main">
-								<img src="images/banner-image-6-1920x500.jpg" class="img-fluid" alt="" />
+								<img src="<?php echo base_url('assets/images/banner-image-6-1920x500.jpg') ?>" class="img-fluid" alt="" />
 							</div>
 							
 							<div class="container-fluid">
@@ -14,7 +14,7 @@
 									<div class="col-9">
 										<div class="row">
 											<div class="col-sm-6 text-center">
-												<img src="images/blog-1-720x480.jpg" class="img-fluid" alt="" />
+												<img src="<?php echo base_url('assets/images/blog-1-720x480.jpg') ?>" class="img-fluid" alt="" />
 
 												<h2 class="m-n"><a href="<?php echo base_url('blog-post') ?>">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
 
@@ -22,7 +22,7 @@
 											</div>
 
 											<div class="col-sm-6 text-center">
-												<img src="images/blog-2-720x480.jpg" class="img-fluid" alt="" />
+												<img src="<?php echo base_url('assets/images/blog-2-720x480.jpg') ?>" class="img-fluid" alt="" />
 
 												<h2 class="m-n"><a href="<?php echo base_url('blog-post') ?>">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
 
@@ -30,7 +30,7 @@
 											</div>
 
 											<div class="col-sm-6 text-center">
-												<img src="images/blog-3-720x480.jpg" class="img-fluid" alt="" />
+												<img src="<?php echo base_url('assets/images/blog-3-720x480.jpg') ?>" class="img-fluid" alt="" />
 
 												<h2 class="m-n"><a href="<?php echo base_url('blog-post') ?>">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
 
@@ -38,7 +38,7 @@
 											</div>
 
 											<div class="col-sm-6 text-center">
-												<img src="images/blog-3-720x480.jpg" class="img-fluid" alt="" />
+												<img src="<?php echo base_url('assets/images/blog-3-720x480.jpg') ?>" class="img-fluid" alt="" />
 
 												<h2 class="m-n"><a href="<?php echo base_url('blog-post') ?>">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
 

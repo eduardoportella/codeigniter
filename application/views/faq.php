@@ -6,7 +6,7 @@
 							<h1>FAQ</h1>
 
 							<div class="image main">
-								<img src="images/banner-image-4-1920x500.jpg" class="img-fluid" alt="" />
+								<img src="<?php echo base_url('assets/images/banner-image-4-1920x500.jpg') ?>" class="img-fluid" alt="" />
 							</div>
 
 							<h2 class="m-n"><i class="fa fa-question-circle"></i> Lorem ipsum dolor sit amet ?</h2>

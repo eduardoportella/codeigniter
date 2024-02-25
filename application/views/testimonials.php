@@ -6,7 +6,7 @@
 							<h1>Testimonials</h1>
 
 							<div class="image main">
-								<img src="images/banner-image-3-1920x500.jpg" class="img-fluid" alt="" />
+								<img src="<?php echo base_url('assets/images/banner-image-3-1920x500.jpg') ?>" class="img-fluid" alt="" />
 							</div>
 
 							<div class="row">

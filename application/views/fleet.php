@@ -5,14 +5,14 @@
 							<h1>Fleet</h1>
 
 							<div class="image main">
-								<img src="images/banner-image-7-1920x500.jpg" class="img-fluid" alt="" />
+								<img src="<?php echo base_url('assets/images/banner-image-7-1920x500.jpg') ?>" class="img-fluid" alt="" />
 							</div>
 
 							<!-- Fleet -->
 							<section class="tiles">
 								<article class="style1">
 									<span class="image">
-										<img src="images/product-1-720x480.jpg" alt="" />
+										<img src="<?php echo base_url('assets/images/product-1-720x480.jpg') ?>" alt="" />
 									</span>
 									<a href="#footer" class="scrolly">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
@@ -29,7 +29,7 @@
 								</article>
 								<article class="style2">
 									<span class="image">
-										<img src="images/product-2-720x480.jpg" alt="" />
+										<img src="<?php echo base_url('assets/images/product-2-720x480.jpg') ?>" alt="" />
 									</span>
 									<a href="#footer" class="scrolly">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
@@ -46,7 +46,7 @@
 								</article>
 								<article class="style3">
 									<span class="image">
-										<img src="images/product-3-720x480.jpg" alt="" />
+										<img src="<?php echo base_url('assets/images/product-3-720x480.jpg') ?>" alt="" />
 									</span>
 									<a href="#footer" class="scrolly">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
@@ -64,7 +64,7 @@
 
 								<article class="style4">
 									<span class="image">
-										<img src="images/product-4-720x480.jpg" alt="" />
+										<img src="<?php echo base_url('assets/images/product-4-720x480.jpg') ?>" alt="" />
 									</span>
 									<a href="#footer" class="scrolly">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
@@ -82,7 +82,7 @@
 
 								<article class="style5">
 									<span class="image">
-										<img src="images/product-5-720x480.jpg" alt="" />
+										<img src="<?php echo base_url('assets/images/product-5-720x480.jpg') ?>" alt="" />
 									</span>
 									<a href="#footer" class="scrolly">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
@@ -100,7 +100,7 @@
 
 								<article class="style6">
 									<span class="image">
-										<img src="images/product-6-720x480.jpg" alt="" />
+										<img src="<?php echo base_url('assets/images/product-6-720x480.jpg') ?>" alt="" />
 									</span>
 									<a href="#footer" class="scrolly">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>

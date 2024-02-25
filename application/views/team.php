@@ -6,13 +6,13 @@
 							<h1>Team</h1>
 
 							<div class="image main">
-								<img src="images/banner-image-2-1920x500.jpg" class="img-fluid" alt="" />
+								<img src="<?php echo base_url('assets/images/banner-image-2-1920x500.jpg') ?>" class="img-fluid" alt="" />
 							</div>
 
 							<div class="container">
 								<div class="row">
 									<div class="col-sm-3 text-center">
-										<img src="images/author-image-1-646x680.jpg" class="img-fluid" alt="" />
+										<img src="<?php echo base_url('assets/images/author-image-1-646x680.jpg') ?>" class="img-fluid" alt="" />
 
 										<h2 class="m-n">John Noe</h2>
 
@@ -25,7 +25,7 @@
 									</div>
 
 									<div class="col-sm-3 text-center">
-										<img src="images/author-image-2-646x680.jpg" class="img-fluid" alt="" />
+										<img src="<?php echo base_url('assets/images/author-image-2-646x680.jpg') ?>" class="img-fluid" alt="" />
 
 										<h2 class="m-n">Jane Doe</h2>
 
@@ -38,7 +38,7 @@
 									</div>
 
 									<div class="col-sm-3 text-center">
-										<img src="images/author-image-3-646x680.jpg" class="img-fluid" alt="" />
+										<img src="<?php echo base_url('assets/images/author-image-3-646x680.jpg') ?>" class="img-fluid" alt="" />
 
 										<h2 class="m-n">Merry Smith</h2>
 
@@ -51,7 +51,7 @@
 									</div>
 
 									<div class="col-sm-3 text-center">
-										<img src="images/author-image-4-646x680.jpg" class="img-fluid" alt="" />
+										<img src="<?php echo base_url('assets/images/author-image-4-646x680.jpg') ?>" class="img-fluid" alt="" />
 
 										<h2 class="m-n">Jack Dawn</h2>
 

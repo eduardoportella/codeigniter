@@ -6,7 +6,7 @@
 							<h1>Terms</h1>
 
 							<div class="image main">
-								<img src="images/banner-image-5-1920x500.jpg" class="img-fluid" alt="" />
+								<img src="<?php echo base_url('assets/images/banner-image-5-1920x500.jpg') ?>" class="img-fluid" alt="" />
 							</div>
 							
 							<h2 class="m-n">1.Lorem ipsum dolor sit amet.</h2>

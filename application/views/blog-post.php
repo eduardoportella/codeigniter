@@ -6,7 +6,7 @@
 							<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
 
 							<div class="image main">
-								<img src="images/blog-fullscreen-1-1920x700.jpg" class="img-fluid" alt="" />
+								<img src="<?php echo base_url('assets/images/blog-fullscreen-1-1920x700.jpg') ?>" class="img-fluid" alt="" />
 							</div>
 
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium maxime enim rem laborum provident culpa, nemo illo voluptatem vero similique, sapiente dolorum tempore, eos facere laboriosam excepturi nisi facilis nulla!</p>
