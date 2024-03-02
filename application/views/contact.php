@@ -19,40 +19,31 @@
 										echo '<p>' . $formerror . '</p>';
 									endif;
 										echo form_open('pagina/contact', array('class' => 'fields'));
-										echo form_input('name', set_value('name'), array('placeholder' => 'Name'));
-										echo form_input('email', set_value('email'), array('placeholder' => 'Email'));
-										echo form_input('subject', set_value('subject'), array('placeholder' => 'Subject'));
-										echo form_textarea('message', set_value('message'), array('placeholder' => 'Message'));
-										echo form_submit('send', 'Send Message', array('class' => 'primary'));
-										echo form_close();
-									?>
-								<form method="post" action="#">
-									<div class="fields">
-
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="text" name="email" id="email" placeholder="Email" />
+										?>
+										<div class="fields">
+											<div class="field half">
+												<?php echo form_input('name', set_value('name'), array('placeholder' => 'Name')); ?>
+											</div>
+											<div class="field half">
+												<?php echo form_input('email', set_value('email'), array('placeholder' => 'Email')); ?>
+											</div>
+											<div class="field">
+												<?php echo form_input('subject', set_value('subject'), array('placeholder' => 'Subject')); ?>
+											</div>
 										</div>
 
 										<div class="field">
-											<input type="text" name="subject" id="subject" placeholder="subject" />
-										</div>
-
-										<div class="field">
-											<textarea name="message" id="message" rows="3" placeholder="Notes"></textarea>
+											<?php echo form_textarea('message', set_value('message'), array('placeholder' => 'Message')); ?>
 										</div>
 
 										<div class="field text-right">
 											<label>&nbsp;</label>
 
 											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="primary" /></li>
+												<li><?php echo form_submit('send', 'Send Message', array('class' => 'primary')); ?></li>
 											</ul>
 										</div>
-									</div>
-								</form>
+										<?php echo form_close(); ?>
 							</section>
 							<section>
 								<h2>Contact Info</h2>

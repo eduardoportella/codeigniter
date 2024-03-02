@@ -62,3 +62,7 @@ $route['offers'] = 'pagina/offers';
 $route['team'] = 'pagina/team';
 $route['terms'] = 'pagina/terms';
 $route['testimonials'] = 'pagina/testimonials';
+$route['post'] = 'pagina';
+$route['post/(:num)'] = 'pagina/post/$1';
+$route['login'] = 'setup/login';
+$route['painel'] = 'setup/login';

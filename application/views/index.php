@@ -62,7 +62,7 @@
 									<span class="image">
 										<img src="<?php echo base_url('assets/images/other-2-720x480.jpg') ?>" alt="" />
 									</span>
-									<a href="<?php echo base_url('offers') ?>offers">
+									<a href="<?php echo base_url('offers') ?>">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
 										
 										<p>price from: <strong> $ 140.00</strong> per weekend</p>
@@ -76,7 +76,7 @@
 									<span class="image">
 										<img src="<?php echo base_url('assets/images/other-3-720x480.jpg') ?>" alt="" />
 									</span>
-									<a href="<?php echo base_url('offers') ?>offers">
+									<a href="<?php echo base_url('offers') ?>">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
 										
 										<p>price from: <strong> $ 140.00</strong> per weekend</p>
@@ -159,7 +159,7 @@
 								<div class="col-sm-4 text-center">
 									<img src="<?php echo base_url('assets/images/blog-1-720x480.jpg') ?>" class="img-fluid" alt="" />
 
-									<h2 class="m-n"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+									<h2 class="m-n"><a href="<?php echo base_url('blog') ?>">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
 
 									<p> John Doe &nbsp;|&nbsp; 12/06/2020 10:30</p>
 								</div>
@@ -167,7 +167,7 @@
 								<div class="col-sm-4 text-center">
 									<img src="<?php echo base_url('assets/images/blog-2-720x480.jpg') ?>" class="img-fluid" alt="" />
 
-									<h2 class="m-n"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+									<h2 class="m-n"><a href="<?php echo base_url('blog') ?>">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
 
 									<p> John Doe &nbsp;|&nbsp; 12/06/2020 10:30</p>
 								</div>
@@ -175,7 +175,7 @@
 								<div class="col-sm-4 text-center">
 									<img src="<?php echo base_url('assets/images/blog-3-720x480.jpg') ?>" class="img-fluid" alt="" />
 
-									<h2 class="m-n"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+									<h2 class="m-n"><a href="<?php echo base_url('blog') ?>">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
 
 									<p> John Doe &nbsp;|&nbsp; 12/06/2020 10:30</p>
 								</div>
