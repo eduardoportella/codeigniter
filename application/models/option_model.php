@@ -19,5 +19,24 @@ class Option_model extends CI_Model {
 		}
 	}
 
+	public function update_option($option_name, $option_value)
+	{
+		$this->db->where('option_name', $option_name);
+		$query = $this->db->get('options', 1);
+		if ($query->num_rows() == 1){
+			$this->db->set('option_value', $option_value);
+			$this->db->where('option_name',$option_name);
+			$this->db->update('options');
+			return $this->db->affected_rows();
+		} else {
+			$dados = array(
+				'option_name' => $option_name,
+				'option_value' => $option_value
+			);
+			$this->db->insert('options', $dados);
+			return $this->db->insert_id();
+		}
+	}
+
 
 }
