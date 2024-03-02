@@ -16,7 +16,12 @@
 						<div class="inner">
 							<!-- Logo -->
 								<a href="index.php" class="logo">
-									<span class="fa fa-car"></span> <span class="title">CAR RENTAL WEBSITE</span>
+									<span class="fa fa-car"></span> 
+									<span class="title">
+										<?php 
+											echo $this->option->get_option('nome_site', 'Site name')
+										?>
+									</span>
 								</a>
 							<!-- Nav -->
 								<nav>

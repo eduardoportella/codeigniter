@@ -16,3 +16,13 @@ if (!function_exists('get_msg')){
 		return $retorno;
 	}
 }
+
+if (!function_exists('verifica_login')){
+	function verifica_login($redirect='setup/login'){
+		$ci = & get_instance();
+		if (!$ci->session->userdata('logged')){
+				set_msg('<p>Acesso restrito! Faça login para continuar.</p>');
+				redirect($redirect, 'refresh');
+		}
+	}
+}
