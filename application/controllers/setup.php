@@ -51,7 +51,7 @@ class Setup extends CI_Controller {
 
 		$dados['titulo'] = 'Painel';
 		$dados['h2'] = 'System Setup';
-		$this->load->view('painel/setup', $dados);
+		$this->load->view('setup/offers', $dados);
 	}
 
 	public function login()

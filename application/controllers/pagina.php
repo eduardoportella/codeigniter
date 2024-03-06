@@ -12,7 +12,7 @@ class Pagina extends CI_Controller{
 	public function index()
 	{
 		$dados['titulo'] = 'Home';
-		$this->load->view('index', $dados);
+		$this->load->view('index', $dados);	
 	}
 
 	public function about()
@@ -70,7 +70,7 @@ class Pagina extends CI_Controller{
 
 	public function offers()
 	{
-		$dados['titulo'] = 'Offers';
+		$dados['titulo'] = 'Ofertas';
 		$this->load->view('offers', $dados);
 	}
 
