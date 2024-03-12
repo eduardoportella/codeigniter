@@ -23,6 +23,7 @@ class Offers_adm extends CI_Controller {
 		$dados['titulo'] = 'Offers Admin';
 		$dados['h2'] = 'Offers';
 		$dados['tela'] = 'read';
+		$dados['offers'] = $this->offers->get();
 		$this->load->view('painel/offers_adm', $dados);
 	}
 
@@ -42,7 +43,16 @@ class Offers_adm extends CI_Controller {
 			if ($this->upload->do_upload('image')){
 				$dados_upload = $this->upload->data();	
 				$dados_form = $this->input->post();
-				var_dump($dados_upload);
+				$dados_insert['titulo'] = $dados_form['title'];
+				$dados_insert['conteudo'] = $dados_form['content'];
+				$dados_insert['imagem'] = $dados_upload['file_name'];
+
+				if ($id = $this->offers->save($dados_insert)){
+					set_msg("<p>Offer Created</p>");
+					redirect('offers_adm/read', 'refresh');
+				} else {
+					set_msg("<p>An error ocurred</p>");
+				}
 			} else {
 				$msg = $this->upload->display_errors();
 				$msg .= "<p>Only .jpg and .png files max size 512KB are allowed</p>";

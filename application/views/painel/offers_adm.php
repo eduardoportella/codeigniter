@@ -28,7 +28,7 @@
 								echo form_close();
 								break;
 							case 'read':
-								if (isset($offers_adm) && sizeof($offers_adm) > 0): ?>
+								if (isset($offers) && sizeof($offers) > 0): ?>
 									<table>
 										<thead>
 											<th align="left">Title</th>
@@ -36,14 +36,13 @@
 										</thead>
 										<tbody>
 												<?php
-												 foreach ($offers_adm as $key): ?>
-													<tr>
-														<td class="offer-title"><?php echo $key->title; ?></td>
+												 foreach ($offers as $key): ?>
+													<tr class="d-flex justify-content-between">
+														<td align="left"><?php echo $key->titulo; ?></td>
 														<td align="right" class="actions">
-															<?php echo anchor('offers_adm/create/' . $key->id, 'Create')?> |
 															<?php echo anchor('offers_adm/update/' . $key->id, 'Update')?> |
 															<?php echo anchor('offers_adm/delete/' . $key->id, 'Delete')?> |
-															<?php echo anchor('post/create/' . $key->id, 'Ver', array('target' => '_blank'))?>	
+															<?php echo anchor('post/create/' . $key->id, 'See', array('target' => '_blank'))?>	
 														</td>
 													</tr>
 												<?php endforeach ?>
