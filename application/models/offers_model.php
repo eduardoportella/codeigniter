@@ -13,6 +13,7 @@ class offers_model extends CI_Model {
 
 		} else {
 			$this->db->insert('offers', $dados);
+			return $this->db->insert_id();
 		}
 	}
 
@@ -37,4 +38,22 @@ class offers_model extends CI_Model {
 		}
 	}
 
+	public function get_single($id=0)
+	{
+		$this->db->where('id', $id);
+		$query = $this->db->get('offers');
+		if ($query->num_rows() == 1){
+			$row = $query->row();
+			return $row;
+		} else {
+			return NULL;
+		}
+	}
+
+	public function delete($id=0)
+	{
+		$this->db->where('id', $id);
+		$this->db->delete('offers');
+		return $this->db->affected_rows();
+	}
 }

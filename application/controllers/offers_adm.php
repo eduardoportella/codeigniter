@@ -65,4 +65,46 @@ class Offers_adm extends CI_Controller {
 		$dados['tela'] = 'create';
 		$this->load->view('painel/offers_adm', $dados);
 	}
+
+	public function delete()
+	{
+		verifica_login();
+
+		$id = $this->uri->segment(3);
+		if ($id > 0){
+			if ($offer = $this->offers->get_single($id)){
+				$dados['offers'] = $offer;			
+			} else {
+				set_msg("<p>This offer doesn't exists.</p>");
+				redirect('offers_adm/read', 'refresh');
+			}
+			
+		} else {
+			set_msg('<p>You must choose a offer to delete it</p>');
+			redirect('offers_adm/read', 'refresh');
+		}
+
+		$this->form_validation->set_rules('delete', 'DELETE', 'trim|required');
+
+		if ($this->form_validation->run() == FALSE){
+			if (validation_errors()){
+				set_msg(validation_errors());
+			}
+		} else {
+			$image = 'uploads/' . $offer->imagem;
+			if ($this->offers->delete($id)){
+				unlink($image);
+				set_msg('<p>Offer deleted sucessfully!</p>');
+				redirect('offers_adm/read', 'refresh');
+			} else {
+				set_msg('<p>Failed to delete offer</p>');
+			}
+		}
+
+		$dados['titulo'] = 'Offers Delete';
+		$dados['h2'] = 'Delete Offer';
+		$dados['tela'] = 'delete';
+		$this->load->view('painel/offers_adm', $dados);
+		
+	}
 }

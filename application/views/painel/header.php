@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="<?php echo base_url('assets/css/main.css') ?> " />
 		<link rel="stylesheet" href="<?php echo base_url('assets/css/painel.css') ?> " />
 		<noscript><link rel="stylesheet" href="<?php echo base_url('assets/css/noscript.css') ?>" /></noscript>
+		<script type="text/javascript" src="<?php echo base_url('assets/js/jquery-3.7.1')?>"></script>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->

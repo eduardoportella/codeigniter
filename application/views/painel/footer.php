@@ -5,7 +5,7 @@
 								<li>Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></li>
 							</ul>
 						</div>
-					</footer>
+</footer>
 
 		<!-- Close Wrapper -->
 			</div>

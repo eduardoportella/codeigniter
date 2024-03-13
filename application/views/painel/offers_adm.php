@@ -56,7 +56,20 @@
 								echo 'tela de update';
 								break;
 							case 'delete':
-								echo 'tela de delete';
+								echo form_open_multipart();
+								echo form_label('Title:', 'title');
+								echo form_input('title', set_value('title', $offers->titulo));
+								echo form_label('Content:', 'content');
+								echo form_textarea('content', set_value('content', $offers->titulo));
+								?> 
+								<p>
+									<small>Imagem:</small>
+									<br>
+									<img src="<?php echo base_url('uploads/'.$offers->imagem)?>" alt="">
+								</p>
+								<?php
+								echo form_submit('delete', 'Delete Offer', array('class' => 'btn btn-primary'));
+								echo form_close();
 								break;
 						}
 
